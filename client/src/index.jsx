@@ -5,11 +5,12 @@ import Singup from "./components/Singup.jsx";
 import Memories from "./components/Memories.jsx";
 import Allthedeal from "./components/Allthedeal.jsx";
 import Add from "./components/Add.jsx";
+import HomePage from "./components/HomePage.jsx";
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
 import Favourite from "./components/Favourite.jsx";
 const App = () => {
   const [data, setdata] = useState([]);
-  const [view, setview] = useState("Login");
+  const [view, setview] = useState("HomePage");
   const [thewonteddata, setthewonteddata] = useState([]);
   console.log(thewonteddata);
   console.log(data);
@@ -30,6 +31,11 @@ const App = () => {
     else if(view==='Favourite'){
       return (
         <Favourite setview={setview} data={data}  />
+      )
+    }
+    else if(view==="HomePage"){
+      return(
+        <HomePage/>
       )
     } 
     else {

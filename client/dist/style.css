@@ -90,7 +90,8 @@ button:disabled {
 
 *{
   font-family: 'Ubuntu', sans-serif;
-  background-image: url(https://res.allmacwallpaper.com/get/Retina-MacBook-Air-13-inch-wallpapers/dark-blur-abstract-4k-2560x1600/21948-11.jpg);
+  /* background-image: url(https://res.allmacwallpaper.com/get/Retina-MacBook-Air-13-inch-wallpapers/dark-blur-abstract-4k-2560x1600/21948-11.jpg); */
+  background-color: black;
   
 }
 h1,h2,h3,input,textarea{
@@ -133,5 +134,11 @@ h3{
 .title{
   margin-right: 15%; 
 }
-
-
+.fixed-top{
+  height: 150px;
+  width: 150px;
+  margin-left: 0px;
+}
+.navbar navbar-expand-lg bg-body-tertiary{
+  color: white;
+}
