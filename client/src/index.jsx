@@ -35,7 +35,7 @@ const App = () => {
     }
     else if(view==="HomePage"){
       return(
-        <HomePage/>
+        <HomePage setview={setview}/>
       )
     } 
     else {

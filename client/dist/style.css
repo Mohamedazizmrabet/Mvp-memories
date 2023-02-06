@@ -142,3 +142,86 @@ h3{
 .navbar navbar-expand-lg bg-body-tertiary{
   color: white;
 }
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+.mainPT{
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+  padding-top: 15%;
+}
+.homepa{
+  height: 100vh;
+}
+.logingb{
+  color: aquamarine;
+  width: 120px;
+  border: solid white 1px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 75%;
+  font-size: 26px;
+}
+.singinb{
+  color: aquamarine;
+  width: 130px;
+  border: solid white 1px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 85%;
+  font-size: 23px;
+}
+.logoHome{
+  margin: 0;
+  width: 100px;
+  height: 100px;
+}
